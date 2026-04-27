@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audrey Rah Portfolio</title>
 
-  <!-- ✅ AUTO DETECT DEVICE -->
-  <script>
-    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-      window.location.href = "https://audrey-portfolio-2026-2ppx.vercel.app/";
-    } else {
-      window.location.href = "https://audrey-portfolio-2026-nine.vercel.app";
-    }
-  </script>
-
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -27,7 +18,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow-x: hidden;
       padding: 20px;
     }
 
@@ -66,7 +56,6 @@
       width: 100%;
       text-align: center;
       box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-      margin: auto;
     }
 
     .eyebrow {
@@ -121,8 +110,35 @@
       margin-bottom: 30px;
     }
 
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      background: linear-gradient(135deg, #00d4ff, #0891b2);
+      color: #020810;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0,212,255,0.5);
+    }
+
     .footer {
-      margin-top: 25px;
+      margin-top: 20px;
       font-family: 'Space Mono', monospace;
       font-size: 0.6rem;
       letter-spacing: 2px;
@@ -163,6 +179,17 @@
     </div>
 
     <div class="divider"></div>
+
+    <!-- 🔥 LINKS -->
+    <div class="links">
+      <a href="https://audrey-portfolio-2026-nine.vercel.app" target="_blank" class="btn">
+        Desktop Version
+      </a>
+
+      <a href="https://audrey-portfolio-2026-2ppx.vercel.app/" target="_blank" class="btn">
+        Mobile Version
+      </a>
+    </div>
 
     <div class="footer">
       University of Houston · UIT
