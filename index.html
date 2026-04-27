@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audrey Rah Portfolio</title>
 
+  <!-- ✅ AUTO DETECT DEVICE -->
+  <script>
+    if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      window.location.href = "https://audrey-portfolio-2026-2ppx.vercel.app/";
+    } else {
+      window.location.href = "https://audrey-portfolio-2026-nine.vercel.app";
+    }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -112,13 +121,6 @@
       margin-bottom: 30px;
     }
 
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: none;
-      border-radius: 12px;
-    }
-
     .footer {
       margin-top: 25px;
       font-family: 'Space Mono', monospace;
@@ -127,7 +129,6 @@
       color: #1e3a4a;
     }
 
-    /* MOBILE FIX */
     @media (max-width: 600px) {
       body {
         align-items: flex-start;
@@ -162,8 +163,6 @@
     </div>
 
     <div class="divider"></div>
-
-    <iframe src="https://audreytech2020-audrey-portfolio.hf.space/?embedded=true"></iframe>
 
     <div class="footer">
       University of Houston · UIT
